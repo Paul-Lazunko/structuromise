@@ -38,7 +38,8 @@ const myThirdHandler: IStructureItem = {
 const myFourthHandler: IStructureItem = {
   id: 'myFourthHandler',
   after: ['myFirstHandler'],
-  type: 'error', // specify type as error if you want to handle it when all handlers in after will be failed
+    // specify type as "error" if you want to handle it when all handlers in after will be failed
+  type: 'error', 
   handler: async(data: any): Promise<void> => {
     // the data object will has next structure:
     // { 
@@ -66,7 +67,8 @@ const structuromise: Structuromise = new Structuromise([
 ]);
 
 // Run init method with defined before **options** and run start in the chain. 
-// Remember that **structuromise** is reusable: you can init it this another options and start again for many times   
+// Remember that **structuromise** is reusable: 
+// you can init it this another options and start again for many times   
 
 structuromise.init(options).start();
 
