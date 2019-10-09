@@ -1,0 +1,23 @@
+# Editors:
+.idea
+*.iml
+
+# Vendor:
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Logs:
+logs
+*.log
+
+# dist
+dist/*
+test/*
+
+# env_file
+*.env
+
+#keys
+keys/*

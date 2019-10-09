@@ -1,0 +1,20 @@
+#Git folder
+.git
+
+# Editors:
+.idea
+*.iml
+
+# Optional npm cache directory
+.npm
+
+# Logs:
+logs
+*.log
+
+# dist
+dist/*
+test/*
+
+#keys
+keys/*

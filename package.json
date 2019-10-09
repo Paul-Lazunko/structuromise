@@ -1,0 +1,49 @@
+{
+  "name": "structuromise",
+  "version": "1.0.0",
+  "description": "Do You have many promises or async (or simple) functions which you have to run in some specific arrange  and hard scenario ?",
+  "author": "Paul Lazunko <plavel@gmail.com>",
+  "keywords": [
+    "node",
+    "promise",
+    "promises",
+    "chain",
+    "async",
+    "manager"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Lazunko/structuromise.git"
+  },
+  "config": {
+    "mainJs": "dist/index.js"
+  },
+  "scripts": {
+    "tslint": "tslint src/**/*.ts{,x}",
+    "postinstall": "tsc"
+  },
+  "dependencies": {
+    "@types/joi": "^14.3.3",
+    "joi": "^14.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "ts-node": "^5.0.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.5.2",
+    "husky": "3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run tslint"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/Paul-Lazunko/structuromise/issues"
+  },
+  "homepage": "https://github.com/Paul-Lazunko/structuromise#readme",
+  "main": "index.js"
+}
